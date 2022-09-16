@@ -35,7 +35,7 @@ int main()
     {
         cout << i+1 <<"ое число массива = "<< A[i] << endl;
     }
-
+    int s1 = 0;
     for (int i = 0; i < 10; i++)
     {
         if (A[i] % 2 == 0)
@@ -43,16 +43,11 @@ int main()
             cout << A[i] << "" << endl;
         }
 
-    }
-    int s1 = 0;
-    for (int i = 0; i < 11; i++)
-    {
-        if (A[i] % 2 != 0)
+        else 
         {
-            s1 += i;
-
+                s1 += i;
         }
-     
+
     }
     cout << s1 << endl;
 }
