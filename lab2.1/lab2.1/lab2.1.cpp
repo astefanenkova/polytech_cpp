@@ -50,8 +50,9 @@ int main()
         if (A[i] % 2 != 0)
         {
             s1 += i;
-            cout << s1 << "" << endl;
-        }
 
+        }
+     
     }
+    cout << s1 << endl;
 }
