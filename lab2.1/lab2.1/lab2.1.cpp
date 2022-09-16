@@ -49,5 +49,5 @@ int main()
         }
 
     }
-    cout << s1 << endl;
+    cout << "Сумма нечетных чисел = " << s1 << endl;
 }
