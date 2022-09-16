@@ -45,7 +45,7 @@ int main()
 
     }
     int s1 = 0;
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 11; i++)
     {
         if (A[i] % 2 != 0)
         {
