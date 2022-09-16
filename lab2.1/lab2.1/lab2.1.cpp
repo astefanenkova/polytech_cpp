@@ -44,12 +44,13 @@ int main()
         }
 
     }
-
+    int s1 = 0;
     for (int i = 0; i < 10; i++)
     {
         if (A[i] % 2 != 0)
         {
-            cout << A[i] << "" << endl;
+            s1 += i;
+            cout << s1 << "" << endl;
         }
 
     }
