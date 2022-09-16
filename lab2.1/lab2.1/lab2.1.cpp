@@ -45,7 +45,7 @@ int main()
 
         else 
         {
-                s1 += i;
+            s1 += A[i];
         }
 
     }
