@@ -49,7 +49,6 @@ int main()
 	cout << "Разность = " << sub(3, 1) << "\n";
 	cout << choice('+')(2, 3) << endl << add(2, 3) << endl;
 
-
 	float* a = new float;
 	*a = 2.2;
 	cout << *a << endl;
