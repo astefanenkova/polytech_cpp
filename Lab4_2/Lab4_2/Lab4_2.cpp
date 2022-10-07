@@ -41,6 +41,11 @@ public:
         weight += Weight;
     }
 
+    /*int applyWeight(Weapon& m)
+    {
+        return(m.weight+weight);
+    }*/
+    
     void applyWeight() 
     {
         applyWeight(1);
@@ -54,7 +59,7 @@ int main()
    cout << ak12.name << " " << ak12.weight << " " << ak12.damage<< " " << ak12.maxWeight << endl;
    cout <<"1 = true, 0 = false:  " << ak12.check(ak12.weight, ak12.maxWeight) << endl;
 
-   ak12.applyWeight(4);
+   ak12.applyWeight(3);
    cout << ak12.weight<<endl;
 
    ak12.applyWeight();
