@@ -28,4 +28,5 @@ int main()
 	cout << "x1-x2 = " << MyMath::Sub(x1, x2) << endl;
 	cout << "x1*x2 = " << MyMath::Mult(x1, x2) << endl;
 	cout<< "x1/x2 = " << MyMath::Div(x1, x2) << endl;
+	cout << "proverka statich per = " << MyMath::x << endl;
 }
