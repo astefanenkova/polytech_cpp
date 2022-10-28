@@ -28,8 +28,8 @@ public:
   
     int get_maxWeight();
 
-    int setDamage(int setdamage);
-  
+    void setDamage(int setdamage);
+
     friend class Charasteristics;
 };
 
@@ -40,7 +40,7 @@ private:
 
 public:
     int get_strenght();
-    int set_strenght(int setstrength);
+    void set_strenght(int setstrength);
     int GetDamage(Weapon s)
     {
         return this->strength + s.damage;

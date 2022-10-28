@@ -55,21 +55,21 @@ int Weapon::get_maxWeight()
     return this->maxWeight;
 }
 
-int Weapon::setDamage(int setdamage)
+void Weapon::setDamage(int setdamage)
 {
     this->damage = setdamage;
-    return this->damage;
 }
+
 
 int Charasteristics::get_strenght()
 {
     return this->strength;
 }
 
-int Charasteristics::set_strenght(int setstrength)
+void Charasteristics::set_strenght(int setstrength)
 {
     this->strength = setstrength;
-    return this->strength;
+    
 }
 
 Charasteristics::Charasteristics(int strength)

@@ -16,7 +16,8 @@ int main()
 	cout << ak47->get_name() << " " << ak47->get_weight() << " " << ak47->get_damage() << " " << ak47->get_maxWeight() << endl;
 	delete ak47;
 
-	cout << ak12.setDamage(100) << endl;
+	ak12.setDamage(100);
+	cout << ak12.get_damage() << endl;
 
 	Charasteristics weap(100);
 	cout << weap.GetDamage(ak12) << endl;
