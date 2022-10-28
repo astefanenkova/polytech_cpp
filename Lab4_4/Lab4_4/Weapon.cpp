@@ -69,7 +69,6 @@ int Charasteristics::get_strenght()
 void Charasteristics::set_strenght(int setstrength)
 {
     this->strength = setstrength;
-    
 }
 
 Charasteristics::Charasteristics(int strength)
