@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include"Weapon.h"
+#include"MagicWeapon.h"
 using namespace std;
 
 int main()
@@ -30,5 +31,11 @@ int main()
 
     Player player = { 76851, "Arthas", "123456789qwert" };
     player.Output();
+
+    MagicWeapon mw("none", 3, 6, 0, 7);
+    cout << mw.get_name()<< endl << mw.get_weight()<< endl 
+        << mw.get_damage()<< endl << mw.get_weaponType() << endl 
+        << mw.get_extradamage() << endl;
+   
 }
 

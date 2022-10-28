@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 #include "Weapon.h"
 using namespace std;
 
@@ -7,7 +8,9 @@ class MagicWeapon : public Weapon
 private:
 	int extradamage;
 public:
-    //MagicWeapon(string name, int weight, int damage, int extradamage);
-    
+	MagicWeapon(string name, int weight, int damage, int weaponType, int extradamage);
+	MagicWeapon();
+	int get_extradamage();
 };
+
 

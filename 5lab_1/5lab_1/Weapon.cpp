@@ -11,6 +11,14 @@ Weapon::Weapon(string name, int weight, int damage, int weaponType)
     this->weaponType = weaponType;
 }
 
+Weapon::Weapon()
+{
+    name = "None";
+    weight = 1;
+    damage = 6;
+    weaponType = 1;
+}
+
 
 string Weapon::get_name()
 {
