@@ -23,10 +23,10 @@ public:
         delete i;
     }
 
-    bool check(int weight, int maxWeight)
+    bool check(int maxWeight)
     {
-
-        if (weight <= maxWeight)
+        
+        if (this->weight <= maxWeight)
         {
             return true;
         }
@@ -59,9 +59,9 @@ public:
 int main()
 {
 
-    Weapon ak12("ak12", 3, 10, 10);
+    Weapon ak12("ak12", 300, 100, 10);
     cout << ak12.name << " " << ak12.weight << " " << ak12.damage << " " << ak12.maxWeight << endl;
-    cout << "1 = true, 0 = false:  " << ak12.check(ak12.weight, ak12.maxWeight) << endl;
+    cout << "1 = true, 0 = false:  " << ak12.check(ak12.maxWeight) << endl;
 
     cout << ak12.applyWeight(3) << endl;
 
