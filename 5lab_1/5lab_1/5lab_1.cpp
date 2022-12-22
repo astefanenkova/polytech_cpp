@@ -18,6 +18,8 @@ int main()
         }
     };
 
+    Weapon ak12("ak12", 3, 10, 10);
+    Weapon ak47("ak47", 4, 9, 10);
     setlocale(LC_ALL, "");
     Weapon weap1("Первое оруж.", 6, 10, 2);
     if (weap1.get_weaponType() == (int)EnWeapon::ONEHANDED)
@@ -32,10 +34,11 @@ int main()
     Player player = { 76851, "Arthas", "123456789qwert" };
     player.Output();
 
-    MagicWeapon mw("none", 3, 6, 0, 7);
+    MagicWeapon mw("none", 3, 6, 0, 20);
+    MagicWeapon mw2("none", 3, 6, 0, 10);
     cout << mw.get_name()<< endl << mw.get_weight()<< endl 
         << mw.get_damage()<< endl << mw.get_weaponType() << endl 
         << mw.get_extradamage() << endl;
-   
+
 }
 

@@ -11,6 +11,7 @@ public:
 	MagicWeapon(string name, int weight, int damage, int weaponType, int extradamage);
 	MagicWeapon();
 	int get_extradamage();
+	int get_damage();
 };
 
 

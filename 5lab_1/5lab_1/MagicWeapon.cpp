@@ -20,5 +20,10 @@ int MagicWeapon::get_extradamage()
 	return this->extradamage;
 }
 
+int MagicWeapon::get_damage()
+{
+	return this->damage + this->extradamage;
+}
+
 
 

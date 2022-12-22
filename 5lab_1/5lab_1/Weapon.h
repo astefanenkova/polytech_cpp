@@ -15,8 +15,14 @@ public:
 	Weapon();
 	string get_name();
 	int get_weight();
-	int get_damage();
+	virtual int get_damage();
 	int get_weaponType();
+	bool operator >(Weapon& otherWeapon) {
+		return this->get_damage() > otherWeapon.get_damage();
+	}
+	bool operator <(Weapon& otherWeapon) {
+		return this->get_damage() < otherWeapon.get_damage();
+	}
 };
 
 enum class EnWeapon
