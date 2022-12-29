@@ -1,10 +1,4 @@
 #include "AVLTree.h"
-AVLTree::AVLTree() {
-}
-
-AVLTree::~AVLTree() {
-    clear();
-}
 
 AVLNode* AVLTree::find(int value) const {
     auto cNode = root;

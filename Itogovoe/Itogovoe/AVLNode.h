@@ -13,7 +13,6 @@ public:
 	void display() override;
 	void updateValues();
 	int balanceFactor();
-
 	AVLNode* leftRotate();
 	AVLNode* rightRotate();
 };
