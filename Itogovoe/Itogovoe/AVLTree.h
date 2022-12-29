@@ -11,7 +11,6 @@ public:
 	void clear() override;
 	int getSize() const;
 	void balance(std::vector<AVLNode**> disbalancedNodesPtrs);
-	bool isEmpty() const;
 	void display() override;
 	void display(AVLNode* node, int depth = 0, int state = 0);
 	void displayBalancedOrder();

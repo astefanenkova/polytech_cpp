@@ -1,7 +1,5 @@
 #pragma once 
-
 #include <iostream>
-
 #include "TreeNode.h"
 
 class AVLNode : public TreeNode {

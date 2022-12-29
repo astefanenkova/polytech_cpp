@@ -1,17 +1,18 @@
 #include "AVLNode.h"
+using namespace std;
 
 AVLNode::AVLNode(int value) : TreeNode(value), height(1) {
 }
 
 void AVLNode::display() {
     if (right != nullptr) {
-        std::cout << "     |---- " << "[" << right->value << "]" << std::endl;
+        cout << "     |---- " << "[" << right->value << "]" << endl;
     }
 
-    std::cout << "|----[" << value << "]" << std::endl;
+    cout << "|----[" << value << "]" << endl;
 
     if (left != nullptr) {
-        std::cout << "     |---- " << "[" << left->value << "]" << std::endl;
+        cout << "     |---- " << "[" << left->value << "]" << endl;
     }
 }
 
@@ -30,7 +31,7 @@ void AVLNode::updateValues() {
         rightHeight = right->height;
     }
 
-    height = std::max(leftHeight, rightHeight) + 1;
+    height = max(leftHeight, rightHeight) + 1;
 }
 
 int AVLNode::balanceFactor() {

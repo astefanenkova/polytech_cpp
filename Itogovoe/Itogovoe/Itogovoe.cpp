@@ -27,6 +27,7 @@ int main() {
     tree.display();
     cout << endl << "Последовательность для сбалансированного дерева:" << endl;
     tree.displayBalancedOrder();
+    cout << endl;
     system("pause");
     return 0;
 }

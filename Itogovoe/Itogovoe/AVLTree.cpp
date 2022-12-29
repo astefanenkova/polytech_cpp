@@ -1,4 +1,5 @@
 #include "AVLTree.h"
+using namespace std;
 
 AVLNode* AVLTree::find(int value) const {
     auto cNode = root;
@@ -18,7 +19,7 @@ AVLNode* AVLTree::find(int value) const {
 
 void AVLTree::insert(int value) {
     auto newNodePtr = &root;
-    std::vector<AVLNode**> disbalancePtrs;
+    vector<AVLNode**> disbalancePtrs;
 
     while (*newNodePtr != nullptr) {
         disbalancePtrs.push_back(newNodePtr);
@@ -40,7 +41,7 @@ void AVLTree::insert(int value) {
 
 void AVLTree::erase(int value) {
     auto delPtr = &root;
-    std::vector<AVLNode**> disbalancePtrs;
+    vector<AVLNode**> disbalancePtrs;
 
     while (*delPtr != nullptr && (*delPtr)->value != value) {
         disbalancePtrs.push_back(delPtr);
@@ -109,7 +110,7 @@ void AVLTree::erase(int value) {
 }
 
 void AVLTree::clear() {
-    std::vector<TreeNode*> stack;
+    vector<TreeNode*> stack;
 
     if (root != nullptr) {
         stack.push_back(root);
@@ -138,11 +139,8 @@ int AVLTree::getSize() const {
     return size;
 }
 
-bool AVLTree::isEmpty() const {
-    return size == 0;
-}
 
-void AVLTree::balance(std::vector<AVLNode**> path) { //балансировка узла
+void AVLTree::balance(vector<AVLNode**> path) { //балансировка узла
     reverse(path.begin(), path.end());
 
     for (auto node : path) {
@@ -170,16 +168,16 @@ void AVLTree::balance(std::vector<AVLNode**> path) { //балансировка узла
 }
 
 void AVLTree::display() {
-    std::cout << std::endl;
+    cout << endl;
 
     if (root != nullptr) {
         display(root);
     }
     else {
-        std::cout << "Пусто";
+        cout << "Пусто";
     }
 
-    std::cout << std::endl;
+    cout << endl;
 }
 
 void AVLTree::display(AVLNode* node, int depth, int state) {
@@ -188,12 +186,12 @@ void AVLTree::display(AVLNode* node, int depth, int state) {
     }
 
     for (int i = 0; i < depth; i++) {
-        std::cout << "     ";
+        cout << "     ";
     }
 
-    std::cout << "||===";
+    cout << "||===";
 
-    std::cout << "{" << node->value << "}" << std::endl;
+    cout << "{" << node->value << "}" << endl;
 
     if (node->left) {
         display(node->left, depth + 1, 1);
@@ -201,7 +199,7 @@ void AVLTree::display(AVLNode* node, int depth, int state) {
 }
 
 void AVLTree::displayBalancedOrder() {
-    std::vector<AVLNode*> order;
+    vector<AVLNode*> order;
 
     order.push_back(root);
 
@@ -215,6 +213,6 @@ void AVLTree::displayBalancedOrder() {
     }
 
     for (auto node : order) {
-        std::cout << node->value << " ";
+        cout << node->value << " ";
     }
 }
