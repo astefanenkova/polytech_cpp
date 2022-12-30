@@ -113,7 +113,7 @@ int AVLTree::getSize() const {
 }
 
 
-void AVLTree::balance(vector<AVLNode**> path) { //балансировка узла
+void AVLTree::balance(vector<AVLNode**> path) { 
     reverse(path.begin(), path.end());
 
     for (auto node : path) {
