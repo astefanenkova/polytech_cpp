@@ -27,6 +27,16 @@ int main() {
     tree.display();
     cout << endl << "Последовательность для сбалансированного дерева:" << endl;
     tree.displayBalancedOrder();
+
+    cout << endl << "Удаляем 10:" << endl;
+    tree.erase(10);
+    tree.display();
+    tree.displayBalancedOrder();
+
+    cout << endl << "Добавляем 160: " << endl;
+    tree.insert(160);
+    tree.display();
+    tree.displayBalancedOrder();
     cout << endl;
     system("pause");
     return 0;

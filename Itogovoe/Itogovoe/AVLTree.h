@@ -8,7 +8,6 @@ public:
 	AVLNode* find(int value) const override;
 	void insert(int value) override;
 	void erase(int value) override;
-	void clear() override;
 	int getSize() const;
 	void balance(std::vector<AVLNode**> disbalancedNodesPtrs);
 	void display() override;

@@ -13,7 +13,6 @@ AVLNode* AVLTree::find(int value) const {
             cNode = cNode->left;
         }
     }
-
     return cNode;
 }
 
@@ -107,32 +106,6 @@ void AVLTree::erase(int value) {
 
     balance(disbalancePtrs);
     size--;
-}
-
-void AVLTree::clear() {
-    vector<TreeNode*> stack;
-
-    if (root != nullptr) {
-        stack.push_back(root);
-    }
-
-    while (!stack.empty()) {
-        TreeNode* node = stack.back();
-        stack.pop_back();
-
-        if (node->left != nullptr) {
-            stack.push_back(node->left);
-        }
-
-        if (node->right != nullptr) {
-            stack.push_back(node->right);
-        }
-
-        size--;
-        delete node;
-    }
-
-    root = nullptr;
 }
 
 int AVLTree::getSize() const {
